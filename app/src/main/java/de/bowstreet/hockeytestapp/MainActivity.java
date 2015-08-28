@@ -95,12 +95,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void checkForCrashes() {
-        CrashManager.register(this, "560eb1f4ada02d23d8c843682b867fca");
+        CrashManager.register(this, APP_IDENTIFIER);
     }
 
     private void checkForUpdates() {
         // Remove this for store builds!
-        UpdateManager.register(this, "560eb1f4ada02d23d8c843682b867fca");
+        UpdateManager.register(this, APP_IDENTIFIER);
     }
 
 }
